@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ru">
+<script>document.documentElement.classList.add("js")</script>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Контакты и запись — Милена Лагуткина</title>
+<meta name="description" content="Телефон, Telegram и форма записи на консультацию к нутрициологу Милене Лагуткиной." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23C17A54%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 font-family=%22Georgia,serif%22 fill=%22white%22 text-anchor=%22middle%22>М</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">М</span>
+      <span>Милена Лагуткина<small>Нутрициолог · Натуропат</small></span>
+    </a>
+    <nav class="nav-main" id="nav-main">
+      <a href="index.html">Главная</a>
+      <a href="about.html">Обо мне</a>
+      <a href="education.html">Образование</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="products.html">Продукты</a>
+      <a href="articles.html">Статьи</a>
+      <a href="contacts.html" aria-current="page">Контакты</a>
+      <a href="contacts.html" class="btn btn-primary btn-sm mobile-only-cta">Записаться</a>
+    </nav>
+    <div class="header-actions">
+      <a href="contacts.html" class="btn btn-primary desktop-only">Записаться</a>
+      <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-main"><span class="bar"></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero container">
+    <p class="eyebrow">Контакты</p>
+    <h1>Свяжитесь со мной удобным способом</h1>
+    <p class="lede">Отвечаю в Telegram обычно в течение дня. Форма ниже за пару кликов подготовит сообщение с вашей заявкой.</p>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="two-col" style="align-items:flex-start;">
+
+        <div class="reveal">
+          <h2>Способы связи</h2>
+          <div class="grid" style="margin-top:var(--space-md); gap:0.9rem;">
+            <a href="tel:+79505609527" class="card" style="display:flex; align-items:center; gap:1rem;">
+              <div class="icon-tile" style="margin:0;">📞</div>
+              <div><strong style="display:block">Телефон</strong><span style="color:var(--color-text-soft)">+7 950 560 95 27</span></div>
+            </a>
+            <a href="https://t.me/MilenaLagutkina" target="_blank" rel="noopener" class="card" style="display:flex; align-items:center; gap:1rem;">
+              <div class="icon-tile" style="margin:0;">💬</div>
+              <div><strong style="display:block">Telegram (личные сообщения)</strong><span style="color:var(--color-text-soft)">@MilenaLagutkina</span></div>
+            </a>
+            <a href="https://t.me/zdorovo_krasivo" target="_blank" rel="noopener" class="card" style="display:flex; align-items:center; gap:1rem;">
+              <div class="icon-tile" style="margin:0;">📣</div>
+              <div><strong style="display:block">Telegram-канал</strong><span style="color:var(--color-text-soft)">«Здорово и красиво»</span></div>
+            </a>
+            <a href="https://t.me/+6NhUMPL6oHg5ZDhi" target="_blank" rel="noopener" class="card" style="display:flex; align-items:center; gap:1rem;">
+              <div class="icon-tile" style="margin:0;">👥</div>
+              <div><strong style="display:block">Закрытый чат</strong><span style="color:var(--color-text-soft)">для подписчиков и клиентов</span></div>
+            </a>
+          </div>
+          <div class="no-bads mt-lg">
+            <span class="ico">🕐</span>
+            <div>
+              <strong>Время ответа</strong>
+              <p>Обычно отвечаю в Telegram в течение рабочего дня. Формат и время консультаций согласовываем индивидуально.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal booking-form-wrap">
+          <h2>Форма записи</h2>
+          <p class="lede" style="margin-bottom:var(--space-md)">Заполните поля — откроется Telegram с готовым текстом заявки, останется его отправить.</p>
+          <form class="js-booking-form">
+            <div class="form-field">
+              <label for="c-name">Имя</label>
+              <input type="text" id="c-name" name="name" required placeholder="Как к вам обращаться" />
+            </div>
+            <div class="form-field">
+              <label for="c-contact">Телефон или Telegram</label>
+              <input type="text" id="c-contact" name="contact" required placeholder="+7 или @username" />
+            </div>
+            <div class="form-field">
+              <label for="c-service">Что вас интересует</label>
+              <select id="c-service" name="service">
+                <option>Консультация</option>
+                <option>Разовая консультация</option>
+                <option>Сопровождение</option>
+                <option>Методичка</option>
+                <option>Другое</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="c-time">Удобное время для связи</label>
+              <input type="text" id="c-time" name="time" placeholder="Например, будни после 18:00" />
+            </div>
+            <div class="form-field">
+              <label for="c-comment">Комментарий</label>
+              <textarea id="c-comment" name="comment" placeholder="Коротко о вашем запросе"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Отправить в Telegram</button>
+            <p class="form-note">Нажимая кнопку, вы перейдёте в Telegram с готовым сообщением — останется его отправить.</p>
+          </form>
+          <div class="form-success">
+            <div class="ico">✅</div>
+            <h3>Открыли Telegram</h3>
+            <p class="lede">Мы подготовили сообщение с вашей заявкой — просто нажмите «Отправить» в чате.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container reveal">
+      <div class="section-head center">
+        <p class="eyebrow">Частые вопросы</p>
+        <h2>Прежде чем написать</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Как проходят консультации?</h3>
+          <p>Онлайн, по видеосвязи, либо очно — формат обсуждаем при записи. Длительность встречи — около 60–90 минут.</p>
+        </div>
+        <div class="card">
+          <h3>Нужно ли сдавать анализы заранее?</h3>
+          <p>Не обязательно, но если у вас есть свежие анализы — возьмите их с собой, это ускорит разбор ситуации.</p>
+        </div>
+        <div class="card">
+          <h3>Вы назначаете БАДы?</h3>
+          <p>Нет. Работа строится вокруг питания, режима и образа жизни — без продажи добавок.</p>
+        </div>
+        <div class="card">
+          <h3>Как оплатить методичку?</h3>
+          <p>Нажмите «Купить» на странице «Продукты» — откроется Telegram с заявкой, дальше пришлю реквизиты и файл.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><span class="brand-mark">М</span>Милена Лагуткина</div>
+        <p>Нутрициолог, натуропат, anti-age эксперт. Член международной ассоциации нутрициологов.</p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="about.html">Обо мне</a></li>
+          <li><a href="education.html">Образование</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="products.html">Продукты</a></li>
+          <li><a href="articles.html">Статьи</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="tel:+79505609527">+7 950 560 95 27</a></li>
+          <li><a href="https://t.me/MilenaLagutkina" target="_blank" rel="noopener">Написать в Telegram</a></li>
+          <li><a href="https://t.me/zdorovo_krasivo" target="_blank" rel="noopener">Канал в Telegram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Сообщество</h4>
+        <ul>
+          <li><a href="https://t.me/+6NhUMPL6oHg5ZDhi" target="_blank" rel="noopener">Закрытый чат</a></li>
+          <li><a href="contacts.html">Все способы связи</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Милена Лагуткина. Все права защищены.</span>
+      <span>Материалы сайта носят информационный характер и не заменяют консультацию врача.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://t.me/MilenaLagutkina" target="_blank" rel="noopener" class="float-tg" aria-label="Написать в Telegram">📩</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
