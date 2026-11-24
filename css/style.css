@@ -224,14 +224,14 @@ h3 { font-size: clamp(1.25rem, 1vw + 1rem, 1.5rem); }
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  aspect-ratio: 1536/2752;
+  aspect-ratio: 4/5;
   height: min(760px, calc(100svh - var(--header-h) - 3rem));
   max-width: 100%;
   background: var(--color-primary-soft);
   box-shadow: var(--shadow-soft);
   isolation: isolate;
 }
-.hero-photo-frame img { width: 100%; height: 100%; object-fit: contain; }
+.hero-photo-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
 .hero-photo-tag {
   position: absolute; left: -14px; bottom: 22px;
   background: var(--color-surface);
