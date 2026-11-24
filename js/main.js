@@ -106,15 +106,13 @@
       var name = (data.get("name") || "").toString().trim();
       var contact = (data.get("contact") || "").toString().trim();
       var service = (data.get("service") || "").toString().trim();
-      var time = (data.get("time") || "").toString().trim();
       var comment = (data.get("comment") || "").toString().trim();
 
       var lines = ["Здравствуйте, Милена! Хочу записаться."];
       if (service) lines.push("Услуга: " + service);
       if (name) lines.push("Имя: " + name);
       if (contact) lines.push("Контакт: " + contact);
-      if (time) lines.push("Удобное время: " + time);
-      if (comment) lines.push("Комментарий: " + comment);
+      if (comment) lines.push("Запрос: " + comment);
 
       var text = encodeURIComponent(lines.join("\n"));
       var tgUrl = "https://t.me/" + TELEGRAM_USERNAME + "?text=" + text;

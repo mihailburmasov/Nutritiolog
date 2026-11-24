@@ -448,6 +448,10 @@ details.article-more .more-body { padding-top: 0.8rem; color: var(--color-text-s
 .page-hero .eyebrow::before { display: none; }
 .page-hero h1 { margin-bottom: 0.9rem; }
 .page-hero .lede { margin-inline: auto; }
+.service-photo { display: flex; justify-content: center; margin-bottom: var(--space-lg); }
+.service-photo img { width: min(100%, 460px); max-height: 560px; object-fit: cover; object-position: center 25%; border-radius: var(--radius-md); box-shadow: var(--shadow-card); }
+.cert-document { display: flex; flex-direction: column; gap: 0.75rem; }
+.cert-document img { width: 100%; height: 190px; object-fit: contain; }
 .breadcrumb { font-size: 0.85rem; color: var(--color-text-faint); margin-bottom: var(--space-sm); }
 .breadcrumb a:hover { color: var(--color-primary-dark); }
 
